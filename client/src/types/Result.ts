@@ -1,7 +1,7 @@
-import { Discipline } from "./Disciplin";
-import { Participant } from "./Participant";
+import Participant from "./Participant";
+import Discipline from "./Disciplin";
 
-export interface Result {
+export default interface Result {
   id: number;
   resultValue: string; // Adjusted to resultValue based on the diagram
   resultType: string;

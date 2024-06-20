@@ -1,10 +1,10 @@
-import { Discipline } from "./Disciplin";
+import Discipline from "./Disciplin";
 
-export interface Participant {
+export default interface Participant {
   id: number;
-  name: string;
-  gender: string;
-  age: number;
-  club: string;
-  disciplines: Discipline[]; // A participant can have multiple disciplines
+  navn: string;
+  køn: string;
+  alder: number;
+  klub: string;
+  disciplines: Discipline[];
 }

@@ -1,6 +1,6 @@
-import { Participant } from "./Participant";
+import Participant from "./Participant";
 
-export interface Discipline {
+export default interface Discipline {
   id: number;
   name: string;
   resultType: string;
