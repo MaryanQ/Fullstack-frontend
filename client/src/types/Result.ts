@@ -1,11 +1,9 @@
-import Participant from "./Participant";
-import Discipline from "./Disciplin";
-
 export default interface Result {
+  map(
+    arg0: (result: any) => import("react/jsx-runtime").JSX.Element
+  ): import("react").ReactNode;
   id: number;
-  resultValue: string; // Adjusted to resultValue based on the diagram
-  resultType: string;
+  resulttype: string;
   date: Date;
-  participant: Participant; // One result belongs to one participant
-  discipline: Discipline; // One result belongs to one discipline
+  resultValue: string;
 }
